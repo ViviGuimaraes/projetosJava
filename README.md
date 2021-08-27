@@ -1,3 +1,3 @@
-### projects in Java
+# Repositório para projetos na linguagem Java.
 
-Repository for SENAI Projetcs in Java.
+Repositório para projetos feitos em Java(backup).
