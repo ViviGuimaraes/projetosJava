@@ -22,7 +22,7 @@ public class ComissaoVendedor {
 		
 		ler.close();
 		
-		if(valorVendas > 10000 && tempoTrabalho > 1) {
+		if((valorVendas > 10000 && tempoTrabalho > 1) && ( valorVendas <= 20000 && tempoTrabalho > 1)) {
 			double comissao;
 			comissao = (valorVendas * 0.05);
 			System.out.println("A comissâo de " + name + " será de " + comissao + " pelas vendas do mês!");
