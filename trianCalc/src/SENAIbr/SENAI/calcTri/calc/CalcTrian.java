@@ -7,7 +7,7 @@ public class CalcTrian {
 	public static void main(String[] args) {
 		
 		double lado1, lado2, lado3;
-		String name, cond1, cond2;
+		String name;
 		
 		Scanner ler = new Scanner(System.in);
 		
@@ -40,7 +40,7 @@ public class CalcTrian {
 			} else if (lado1 != lado2 && lado2 != lado3 && lado1 != lado3) {
 				System.out.println("Temos um triângulo Escaleno!");
 			} else {
-				System.out.println("Temos um triângulo Isósceles");
+				System.out.println("Temos um triângulo Isósceles!");
 			}
 
 		} else {
