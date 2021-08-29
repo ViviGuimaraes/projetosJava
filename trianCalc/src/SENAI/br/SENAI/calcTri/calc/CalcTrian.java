@@ -1,4 +1,4 @@
-package SENAIbr.SENAI.calcTri.calc;
+package SENAI.br.SENAI.calcTri.calc;
 
 import java.util.Scanner;
 
