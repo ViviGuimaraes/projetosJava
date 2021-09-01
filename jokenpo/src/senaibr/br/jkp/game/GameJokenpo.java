@@ -23,7 +23,7 @@ public class GameJokenpo {
 		System.out.println("Escolha uma das 3 opçôes: ");
 		System.out.println("[1] - Pedra;");
 		System.out.println("[2] - Papel;");
-		System.out.println("[3] - Tesoura");
+		System.out.println("[3] - Tesoura;");
 		
 		System.out.print("Escolha a opção: ");
 		jogador = ler.nextInt();
@@ -65,8 +65,6 @@ public class GameJokenpo {
 		} else {
 			System.out.println("Aconteceu um empate...");
 		}
-		
-		System.out.println("muito gay!");
 		
 	}
 
