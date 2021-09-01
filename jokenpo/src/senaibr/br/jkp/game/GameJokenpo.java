@@ -66,6 +66,7 @@ public class GameJokenpo {
 			System.out.println("Aconteceu um empate...");
 		}
 		
+		System.out.println("muito gay!");
 		
 	}
 
