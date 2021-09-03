@@ -20,7 +20,7 @@ public class Sorteio {
 		for(i = 0; i < 15; i++) {
 			sorteado = sorteio.nextInt(25) + 1;
 			for ( ; ; ) {
-				if(conjunto.add(sorteado)) break; sorteado = sorteio.nextInt(15) + 1;
+				if(conjunto.add(sorteado)) break; sorteado = sorteio.nextInt(25) + 1;
 			}
 			System.out.println(sorteado);
 		}
