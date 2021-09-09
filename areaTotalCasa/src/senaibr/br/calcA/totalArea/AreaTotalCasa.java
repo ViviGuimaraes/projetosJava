@@ -15,7 +15,7 @@ public class AreaTotalCasa {
 		System.out.println("    Calculo da área de uma casa    ");
 		System.out.println("===================================");
 		System.out.println("");
-	
+	//teste
 		soma = 0;
 		respComodo = "S"; 
 		
