@@ -19,7 +19,7 @@ public class AreaTotalCasa {
 		soma = 0;
 		respComodo = "S"; 
 		
-		while((respComodo.equals("S")) || (respComodo.equals("s"))){
+		while(respComodo.equalsIgnoreCase("S")){
 			System.out.print("Qual o nome do cômodo?: ");
 			comodoName = ler.next();
 				
@@ -32,7 +32,7 @@ public class AreaTotalCasa {
 			totalArea = largura * comprimento;
 			soma = soma + totalArea; 
 				
-			System.out.print("Gostaria de adicionar um cômodo? [S/N]");
+			System.out.print("Gostaria de adicionar um cômodo? [S/N] : ");
 			respComodo = ler.next();
 		}
 		System.out.println("");
