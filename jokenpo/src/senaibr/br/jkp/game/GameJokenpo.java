@@ -14,8 +14,10 @@ public class GameJokenpo {
 
 	public static void main(String[] args) {
 		
-		int acesso, maquina, jogador, quantidadePartida, contadorPartidas, totalVencedorJogador,
-		totalVencedorMaquina, Desempate;
+		int acesso, maquina, jogador, quantidadePartida, totalVencedorJogador,
+		totalVencedorMaquina, Desempate, contadorPartidas,totalNecessarioInt;
+		
+		double totalNecessario;
 		
 		String resposta;
 		
@@ -24,9 +26,9 @@ public class GameJokenpo {
 		while((resposta.equals("S")) || (resposta.equals("s"))) 
 		{
 			
-			contadorPartidas = 1;
-			totalVencedorJogador = 0;
-			totalVencedorMaquina = 0;
+			contadorPartidas= 1;
+			totalVencedorJogador = 1;
+			totalVencedorMaquina = 1;
 			Desempate = 0;
 			
 			Scanner leitor = new Scanner(System.in);
@@ -51,6 +53,9 @@ public class GameJokenpo {
 				}
 				
 			} while (acesso == 0);
+			
+			totalNecessario = (quantidadePartida / 2) + 1;
+			totalNecessarioInt = (int)totalNecessario;
 			
 			System.out.println("==================================");
 			System.out.printf("TOTAL DE PARTIDAS: %d\n",quantidadePartida);
@@ -108,43 +113,48 @@ public class GameJokenpo {
 						Desempate = 1;
 					}
 					
-					} while(Desempate == 1); // se Desempate for igual a 1 ele gera novas opções para ambos os jogadores
+				} while(Desempate == 1); // se Desempate for igual a 1 ele gera novas opções para ambos os jogadores
 					
 					// Imprime a escolha da Máquina.
-					if(maquina == 1) 
-					{
-						System.out.println("A MÁQUINA escolheu Pedra!, e");
-					} else if (maquina == 2) {
-						System.out.println("A MÁQUINA escolheu Papel!, e");
-					} else {
-						System.out.println("A MÁQUINA escolheu Tesoura!, e ");
-					}
+				if(maquina == 1) 
+				{
+					System.out.println("A MÁQUINA escolheu Pedra!, e");
+				} else if (maquina == 2) {
+					System.out.println("A MÁQUINA escolheu Papel!, e");
+				} else {
+					System.out.println("A MÁQUINA escolheu Tesoura!, e ");
+				}
 					
-					// Imprime a escolha do Jogador.
-					if(jogador == 1) 
-					{
-						System.out.println("O JOGADOR escolheu Pedra!");
-					} else if (jogador == 2) {
-						System.out.println("O JOGADOR escolheu Papel!");
-					} else {
-						System.out.println("O JOGADOR escolheu Tesoura!");
-					}
+				// Imprime a escolha do Jogador.
+				if(jogador == 1) 
+				{
+					System.out.println("O JOGADOR escolheu Pedra!");
+				} else if (jogador == 2) {
+					System.out.println("O JOGADOR escolheu Papel!");
+				} else {
+					System.out.println("O JOGADOR escolheu Tesoura!");
+				}
 					
 				contadorPartidas++;
 				
-			} while(contadorPartidas <= quantidadePartida);
+			} while((totalNecessarioInt >= totalVencedorMaquina) && (totalNecessarioInt >= totalVencedorJogador));
 			
 			if(totalVencedorJogador > totalVencedorMaquina) 
 			{
-				System.out.printf("\nO Jogador ganhou ganhou de %d x %d", totalVencedorJogador,totalVencedorMaquina);
-			} else 
-			{
+				System.out.printf("\nO Jogador ganhou de %d x %d", totalVencedorJogador,totalVencedorMaquina);
+			} else {
 				System.out.printf("\nO jogador perdeu de %d x %d", totalVencedorJogador, totalVencedorMaquina);
 			}	
 			
 			System.out.printf("\nGostaria de jogar novamente? [S/N]: ");
 			resposta = leitor.next();
 			
+			while((!resposta.equalsIgnoreCase("S")) && (!resposta.equalsIgnoreCase("N"))) {
+
+				System.out.printf("\nDigite S/s ou N/n: ");
+				resposta = leitor.next();
+				
+			}	
 		}
 	}
 }
