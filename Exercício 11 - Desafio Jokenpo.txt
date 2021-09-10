@@ -1,0 +1,50 @@
+Reconstrua o jogo Jokenpo no estilo "melhor de três". O jogo deverá solicitar o número de partidas no desafio, este número deverá ser ímpar e maior ou igual a três.
+
+O ganhador será aquele que vencer a maior quantidade de partidas de modo que não seja mais possível o rival superá-lo.
+
+Caso haja empate o jogo deverá prosseguir até que ocorra o desempate, a partida de ouro.
+
+Trate a entrada do usuário, não permitindo que sejam inseridos valores inválidos.
+
+Sugestão de fluxo do jogo.
+
+----------------------------
+      J O K E N P O
+----------------------------
+Quantas partidas: 3
+
+----------------------------
+1 - Pedra
+2 - Papel
+3 - Tesoura
+----------------------------
+
+Partida 1
+Qual a sua opção:  1
+
+Você escolheu Pedra
+Computador escolheu Tesoura
+
+Você ganhou esta.
+
+Partida 2
+Qual a sua opção:  2
+
+Você escolheu Papel
+Computador escolheu Tesoura
+
+Computador ganhou esta.
+
+Partida 3
+Qual a sua opção:  1
+
+Você escolheu Pedra
+Computador escolheu Papel
+
+Computador ganhou esta.
+
+COMPUTADOR VENCEU O DESAFIO POR 2 X 1
+
+Jogar novamente(S/N): S
+
+
