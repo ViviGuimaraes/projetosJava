@@ -29,7 +29,6 @@ public class GameJokenpo {
 			totalVencedorMaquina = 0;
 			Desempate = 0;
 			
-			
 			Scanner leitor = new Scanner(System.in);
 			Random sorteio = new Random();
 			maquina = sorteio.nextInt(3) + 1;
@@ -68,7 +67,6 @@ public class GameJokenpo {
 				System.out.println("[3] - Tesoura;");
 				System.out.println();
 				
-				
 				System.out.print("Escolha a opção: ");
 				jogador = leitor.nextInt();			
 				
@@ -77,9 +75,6 @@ public class GameJokenpo {
 				System.out.println("         RESULTADO PARTIDA        ");
 				System.out.println("----------------------------------");
 				System.out.println();
-				
-				
-				
 				
 				// Imprime o resultado do game.
 				do {
