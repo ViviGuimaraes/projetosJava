@@ -1,7 +1,7 @@
 /*MacacoQueDigitaCódigo©, 2021.
  *
  * 
- *
+ * 
  * COM "FOR", TUDO FICARIA MAIS FÁCIL...
  */
 
@@ -12,7 +12,7 @@ import java.util.Random;  //importação da Class Random
 
 public class GameJokenpo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { // CORRIGIDO;
 		
 		int acesso, maquina, jogador, quantidadePartida, totalVencedorJogador,
 		totalVencedorMaquina, Desempate, contadorPartidas,totalNecessarioInt;
