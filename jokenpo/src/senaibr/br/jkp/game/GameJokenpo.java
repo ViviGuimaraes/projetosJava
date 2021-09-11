@@ -27,8 +27,8 @@ public class GameJokenpo {
 		{
 			
 			contadorPartidas= 1;
-			totalVencedorJogador = 1;
-			totalVencedorMaquina = 1;
+			totalVencedorJogador = 0;
+			totalVencedorMaquina = 0;
 			Desempate = 0;
 			
 			Scanner leitor = new Scanner(System.in);
@@ -62,8 +62,7 @@ public class GameJokenpo {
 			System.out.println("==================================");
 			System.out.println("");
 			
-			do {
-				
+			while(!(totalVencedorJogador == totalNecessarioInt) && !(totalVencedorMaquina == totalNecessarioInt)) {
 				System.out.printf("\nPARTIDA: %d\n", contadorPartidas);
 				System.out.println("Escolha uma das 3 opções: ");
 				System.out.println();
@@ -136,8 +135,8 @@ public class GameJokenpo {
 				}
 					
 				contadorPartidas++;
+			}
 				
-			} while((totalNecessarioInt >= totalVencedorMaquina) && (totalNecessarioInt >= totalVencedorJogador));
 			
 			if(totalVencedorJogador > totalVencedorMaquina) 
 			{
